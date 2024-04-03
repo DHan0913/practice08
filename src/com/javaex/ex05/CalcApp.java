@@ -5,16 +5,18 @@ import java.util.Scanner;
 public class CalcApp {
 
 	public static void main(String[] args) {
-		try {
-			String operator = "";
-			while (operator != "/q") {
 
-				System.out.print(">>");
-				Scanner sc = new Scanner(System.in);
-				String numLine = sc.nextLine();
+		String operator = "";
+		while (0 < 1) {
 
+			System.out.print(">>");
+			Scanner sc = new Scanner(System.in);
+			String numLine = sc.nextLine();
+			if (numLine.equals("/q")) {
+				System.out.println("종료합니다.");
+				break;
+			} else {
 				String[] numbers = numLine.split(" ");
-
 				int num1 = Integer.parseInt(numbers[0]);
 				operator = numbers[1];
 				int num2 = Integer.parseInt(numbers[2]);
@@ -43,11 +45,9 @@ public class CalcApp {
 				default:
 					System.out.println("알 수 없는 연산입니다");
 				}
-
 			}
-		} catch (NumberFormatException e) {
-			System.out.println("종료합니다");
 		}
+
 	}
 
 }
