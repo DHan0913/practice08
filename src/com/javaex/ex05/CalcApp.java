@@ -6,7 +6,6 @@ public class CalcApp {
 
 	public static void main(String[] args) {
 
-		String operator = "";
 		while (0 < 1) {
 
 			System.out.print(">>");
@@ -18,7 +17,7 @@ public class CalcApp {
 			} else {
 				String[] numbers = numLine.split(" ");
 				int num1 = Integer.parseInt(numbers[0]);
-				operator = numbers[1];
+				String operator = numbers[1];
 				int num2 = Integer.parseInt(numbers[2]);
 
 				switch (operator) {
