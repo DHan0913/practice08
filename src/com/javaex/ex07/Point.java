@@ -11,6 +11,12 @@ public class Point {
 	}
 
 	//equals() 메소드를 작성하세요.
-
+	public boolean equals(Object obj) {
+		if (obj instanceof Point) {
+			Point other = (Point)obj;
+			return x == other.x;
+		}
+		return super.equals(obj);
+	}
 	
 }

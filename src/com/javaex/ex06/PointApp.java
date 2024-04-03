@@ -1,6 +1,6 @@
 package com.javaex.ex06;
 
-public class PointApp {
+public class PointApp { // 기본 api
 
 	public static void main(String[] args) {
 		
