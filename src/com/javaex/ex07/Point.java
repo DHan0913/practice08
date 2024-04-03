@@ -11,6 +11,7 @@ public class Point {
 	}
 
 	//equals() 메소드를 작성하세요.
+	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Point) {
 			Point other = (Point)obj;

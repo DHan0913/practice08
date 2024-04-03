@@ -6,12 +6,12 @@ public class CalcApp {
 
 	public static void main(String[] args) {
 
-		while (0 < 1) {
+		while (0 < 1) { // 무한루프
 
 			System.out.print(">>");
 			Scanner sc = new Scanner(System.in);
 			String numLine = sc.nextLine();
-			if (numLine.equals("/q")) {
+			if (numLine.equals("/q")) { // "/q" 입력시 강제 종료 , 기본 입력 형식 (num스페이스바operator스페이스바num) 을 지키지 않으면 오류 발생 
 				System.out.println("종료합니다.");
 				break;
 			} else {
