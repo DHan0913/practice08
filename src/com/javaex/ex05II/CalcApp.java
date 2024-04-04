@@ -23,10 +23,10 @@ public class CalcApp {
 				System.out.println("종료합니다.");
 				break;
 			}
-			String [] data = numLine.split(" ");
-			int num1 = Integer.parseInt(data [0]);
-			String operator = data [1];
-			int num2 = Integer.parseInt(data [2]);
+			String[] data = numLine.split(" ");
+			int num1 = Integer.parseInt(data[0]);
+			String operator = data[1];
+			int num2 = Integer.parseInt(data[2]);
 			switch (operator) {
 			case "+":
 				Add add = new Add();
@@ -53,5 +53,6 @@ public class CalcApp {
 			}
 
 		}
+		sc.close();
 	}
 }

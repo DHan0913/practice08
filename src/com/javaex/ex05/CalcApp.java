@@ -44,7 +44,9 @@ public class CalcApp {
 				default:
 					System.out.println("알 수 없는 연산입니다");
 				}
+				
 			}
+			sc.close();
 		}
 
 	}
