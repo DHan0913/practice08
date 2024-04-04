@@ -13,13 +13,19 @@ public class SumApp {
 
 		//코드를 작성하세요
 		
-        String[] numbers = numLine.split(" ");
+        String[] numbers = numLine.split(" "); //	공백 문자를 기준으로 분할 
 
         for (String numStr : numbers) {
             sum += Integer.parseInt(numStr);
         }
-		
-		System.out.println("합:" + sum);
+        
+//		for (int i = 0; i < numbers.length; i++) {     
+//			int num = Integer.parseInt(numbers[i]);
+// 			sum += num;
+//        }
+//        
+        
+        System.out.println("합:" + sum);
 		
 		sc.close();
 	}
